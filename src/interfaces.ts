@@ -12,11 +12,11 @@ export interface IReadInterval {
   end: number;
 }
 export interface FindOpts {
-  filter(
+  filter?(
     filename: string,
     idx: number
   ): boolean;
-  maxFiles: number;
+  maxFiles?: number;
 }
 
 export type IParsers =
